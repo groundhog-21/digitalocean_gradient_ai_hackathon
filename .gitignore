@@ -1,0 +1,15 @@
+# --- Security (The "Never Push" List) ---
+.env
+*.key
+
+# --- Python Environment ---
+.venv/
+__pycache__/
+**/*.pyc
+
+# --- DigitalOcean Gradient Specifics ---
+.gradient/
+
+# --- OS & IDE Clutter ---
+.DS_Store
+.vscode/
