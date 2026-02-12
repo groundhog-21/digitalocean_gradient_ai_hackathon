@@ -1,147 +1,235 @@
 # 🏆 Hackathon Cold-Start Report
 
 ## 📋 1. Analysis & Requirements
-**Amazon Nova AI Hackathon – Structured Setup Data**
+**GitLab AI Hackathon – Structured Setup Summary**
 
-| Category | Details |
-|----------|---------|
-| **1️⃣ Mandatory Requirements (Must‑Builds)** | • **Core tech** – Your solution **must** use **Amazon Nova** (any of the listed foundation models or the Nova Act service).  <br> - Nova 2 Lite (reasoning) <br> - Nova 2 Sonic (speech‑to‑speech) <br> - Nova multimodal Embeddings <br> - Nova Act (agent fleet / UI‑workflow automation) <br>• **Scope** – Build a **generative AI application** on **AWS** that leverages one (or more) of the above. <br>• **Allowed focus categories** (you may pick any, or “Freestyle”):  <br> - Agentic AI  <br> - Multimodal Understanding  <br> - UI Automation (Nova Act)  <br> - Voice AI (Nova 2 Sonic)  <br> - Freestyle  <br>• **Submission artefacts** – Text description, ≤3 min demo video (include #AmazonNova), code repo link (public or private – if private give access to `testing@devpost.com` and `Amazon‑Nova‑hackathon@amazon.com`). |
-| **2️⃣ Judging Criteria & Weighting** | |<u>Primary Hackathon Submission</u>| |<u>Optional Feedback / Blog‑Post Submissions</u>| |
-| – Technical Implementation | **60 %** – quality, effectiveness, integration with Amazon Nova, overall system architecture. |
-| – Enterprise or Community Impact | **20 %** – business value or tangible community benefit. |
-| – Creativity & Innovation | **20 %** – novelty of approach, innovative use of multi‑agent systems, real‑world problem solving. |
-| – Feedback Submission (optional) | Evaluated on **completeness, viability, potential impact** of the feedback itself. |
-| – Blog‑Post Prize (optional) | Evaluated on **completeness and potential impact** of the post (how the project benefits the target community, adoption plan, etc.). |
-| **3️⃣ Proprietary Platforms (account required)** | • **Amazon Web Services (AWS)** – Needed to provision Nova models/services. <br>• **Amazon Nova** (accessed through AWS console/API). <br>• **Devpost** – Required for hackathon registration, project submission, and private‑repo access permissions. |
-| **4️⃣ Specific API / Access Keys Mentioned** | None are listed in the overview.  (Access to Nova models will be via standard AWS credentials; participants must have an AWS account and appropriate IAM permissions, but no hard‑coded keys are provided in the rules.) |
-| **5️⃣ Other Notable Logistics** | • **Eligibility** – Ages 18+, certain countries/territories excluded (full list in “View full rules”). <br>• **Prize pool** – $40 k cash + $55 k AWS credits (plus many category‑specific awards). <br>• **Deadline** – 17 Mar 2026 @ 01:00 am GMT+1 (online, public). <br>• **Required tags in demo** – Include the hashtag **#AmazonNova**. |
+---
 
----  
+## 1. Mandatory Requirements (Must‑Builds)
 
-**Take‑away for participants**  
-1. **Secure an AWS account** (and enable the Amazon Nova APIs).  
-2. **Design your project around at least one Nova foundation model or Nova Act** – this is non‑negotiable.  
-3. **Focus on the three weighted criteria** (Technical Implementation > Impact > Creativity) to maximise your score.  
-4. **Prepare a short demo video with the #AmazonNova tag** and ensure any private repo is shared with the two email addresses listed.  
-5. **Optional bonuses** (blog post, feedback survey) can earn extra AWS credits or cash – follow the separate judging rubrics.  
+| # | Requirement | Details / How to satisfy |
+|---|-------------|--------------------------|
+| 1 | **Create at least one custom **public** agent OR a public flow** | Must be built with the *GitLab Duo Agent Platform*.  The agent/flow must be **public** (visible to anyone) and hosted in a **GitLab project** under the “GitLab AI Hackathon” group. |
+| 2 | **Agent must act, not just chat** | Agents must react to **triggers/events** (e.g., merge‑request opened, pipeline finished) and **take automated actions** (e.g., create tests, run security scans, generate compliance reports). Pure Q&A chat‑bots are disqualified. |
+| 3 | **Solve a software‑development‑lifecycle friction point** | Acceptable themes include: <br>• Automated security fixes  <br>• Streamlined code reviews  <br>• Generation of compliance reports  <br>• Risk‑flagging, test generation, deployment automation, etc. |
+| 4 | **Open‑source, public repo** | – URL to the project must be supplied.  <br>– Repository must be **public** and include all source code, assets, and instructions to run the agent.  <br>– Must contain an identifiable open‑source license (visible in the “Project information” section). |
+| 5 | **Project description** | A clear textual description explaining features, functionality, and the problem the agent solves. |
+| 6 | **Demo video (≤ 3 min)** | Upload to **YouTube** or **Vimeo**, set to **public**, and link in the submission. Judges will only watch the first three minutes. |
+| 7 | **Eligibility** | • Participant must be of legal age in their country. <br>• Open to all countries/territories *except* the standard exclusions listed in the full rules. |
+| 8 | **Group access** | Request access to the “GitLab AI Hackathon” group on GitLab before submitting. |
+
+> **Bottom‑line “Must‑Build”**: a *public, trigger‑driven GitLab Duo Agent (or flow) that automates a real‑world developer workflow and is delivered as an open‑source GitLab repo with description + ≤3‑min demo video.
+
+---
+
+## 2. Judging Criteria & Relative Emphasis (as reflected by prize categories)
+
+| Prize / Category | Cash Value | Implicit Judging Focus | Relative Weight (high‑medium‑low) |
+|------------------|------------|------------------------|-----------------------------------|
+| **Grand Prize** | $15,000 | Overall excellence (technical, impact, usability, innovation). | ★★★ |
+| **Most Technically Impressive** | $5,000 | Depth of engineering, clever use of GitLab Duo Agent APIs, robustness. | ★★ |
+| **Most Impactful** | $5,000 | Measurable benefit to developers / workflow efficiency. | ★★ |
+| **Easiest to Use** | $5,000 | UX, documentation, onboarding simplicity. | ★★ |
+| **Honorable Mention** (6×) | $500 each | Good projects that didn’t fit other top categories. | ★ |
+| **Sustainable Design Bonus** (4×) | $500 each | Environmental / resource‑efficient design (e.g., Green Agents). | ★ |
+| **Most Impactful on GitLab & Google – Grand** | $10,000 | Deep integration with **Google Cloud** services; demonstrable impact. | ★★ |
+| **Most Impactful on GitLab & Google – Runner‑Up** | $3,500 | Same as above, but secondary tier. | ★ |
+| **Most Impactful on GitLab & Anthropic – Grand** | $10,000 | Strong use of **Anthropic** LLMs through GitLab; high impact. | ★★ |
+| **Most Impactful on GitLab & Anthropic – Runner‑Up** | $3,500 | Same as above, secondary tier. | ★ |
+| **Green Agent Prize** | $3,000 | Agents that reduce carbon footprint (e.g., efficient CI, serverless, low‑compute). | ★★ |
+| **$13,500 prize for Google Cloud use** | $13,500 total (across sub‑prizes) | Projects that explicitly leverage **Google Cloud** resources. | ★★ |
+| **$13,500 prize for Anthropic use** | $13,500 total (across sub‑prizes) | Projects that embed **Anthropic** models via the platform. | ★★ |
+
+**Interpretation:**  
+- *Technical depth* and *impact* are the two heaviest levers (Grand, Tech‑Impressive, Impact categories).  
+- *Integration with partner platforms* (Google Cloud, Anthropic) carries a sizable monetary incentive, indicating a strong weighting for those who can demonstrate real usage.  
+- *Usability* (Easiest to Use) and *sustainability* (Green Agent, Sustainable Design) are also explicitly rewarded but with smaller cash values.
+
+---
+
+## 3. Proprietary Platforms Requiring Account Sign‑Ups
+
+| Platform | Reason for Sign‑Up / Access |
+|----------|-----------------------------|
+| **GitLab** (core) | Create a GitLab account, request access to the “GitLab AI Hackathon” group, and host the public repo (must be on GitLab). |
+| **GitLab Duo Agent Platform** | Requires special access (request via the hackathon site) to use the agent SDK, flows, and prompt library. |
+| **Discord** | Join the official hackathon Discord server (specifically the `#ai-hackathon` channel) for community, support, and announcements. |
+| **Google Cloud Platform (GCP)** | Needed to qualify for the $13,500 Google Cloud prize and the “Most Impactful on GitLab & Google” categories. Participants must have a GCP account and appropriate API credentials. |
+| **Anthropic** (LLM provider) | Required for the $13,500 Anthropic prize and the “Most Impactful on GitLab & Anthropic” categories. Participants need an Anthropic account / API key. |
+| **YouTube / Vimeo** | Required to host the demo video (publicly viewable). While free, an account is still needed. |
+
+> **Note:** No mention of DigitalOcean or other proprietary cloud services in this hackathon description.
+
+---
+
+## 4. Specific API Keys / Access Keys Mentioned
+
+- **Explicit keys:** *None* are listed in the overview text.  
+- **Implicit keys required for prize eligibility:**  
+  - **Google Cloud API credentials** (service‑account key, OAuth token, etc.) if you intend to use GCP services.  
+  - **Anthropic API key** (or equivalent authentication token) if you intend to run Anthropic models through GitLab.  
+
+These keys must be **obtained by the participant** from the respective provider’s console; they are **not supplied in the hackathon description**.
+
+---
+
+### Quick Reference – What You Must Have Before Starting
+
+| Item | Why Needed |
+|------|------------|
+| GitLab account (personal) + access to the Hackathon group | Host code, create agents/flows, submit URL. |
+| Discord account (optional but recommended) | Community support, announcements. |
+| Google Cloud account **or** Anthropic account (or both) – if you target the partner‑specific prize tracks | Access to the respective APIs for integration. |
+| YouTube or Vimeo account | Publish the ≤3‑min demo video. |
+| Open‑source license file in the repo (e.g., MIT, Apache‑2.0) | Required for eligibility. |
+| Ability to generate a **public** GitLab project URL | Submission requirement. |
+
+--- 
+
+**End of Structured Summary**.
 
 ## 🛠️ 2. Infrastructure Blueprint
 ### .gitignore Content:
 ```text
+*.bak
 *.log
 *.pyc
-*.tfstate
+*.sublime-project
+*.sublime-workspace
+*.tmp
 .DS_Store
 .aws/
-.coverage
 .env
 .gradient/
 .idea/
-.pytest_cache/
 .terraform/
 .venv/
 .vscode/
 __pycache__/
+build/
 cdk.out/
 coverage/
+dist/
 node_modules/
 ```
 ### requirements.txt Content:
 ```text
-boto3
+anthropic
+fastapi
+google-cloud-logging
+google-cloud-storage
 gradient-adk
 gradient-sdk
 langgraph
-numpy
-opencv-python
-pandas
-pillow
-pydub
+pydantic
 python-dotenv
+python-gitlab
 requests
-tqdm
-transformers
+uvicorn
 ```
 ## 🚀 3. Proposed Concepts (Singles & Doubles)
-## 1️⃣ Idea: **Nova‑Tutor – AI Study‑Planner & Homework Helper**  
-**Category:** Agentic AI + UI Automation (Nova‑Act)  
+**Idea 1 – “Merge‑Guard AI Reviewer”**  
 
-### Description  
-- **Frontend:** A lightweight web app (React + Amplify) where students type a “What do I need to learn this week?” prompt.  
-- **Core Engine:**  
-  1. **Nova‑2‑Lite** generates a structured weekly syllabus, breaks topics into bite‑size lessons, and writes short quiz questions.  
-  2. **Nova‑Act** orchestrates a multi‑step workflow:  
-     * Pulls free‑open‑source video / article links from AWS‑OpenSearch,  
-     * Populates a personalized Notion/Google‑Docs template via the respective APIs,  
-     * Sends a reminder email (SES) each evening.  
-- **Output:** A downloadable PDF + an interactive checklist that updates automatically as the student marks tasks complete.  
+**Description**  
+A GitLab Duo Agent that fires **when a Merge Request (MR) is opened or updated**.  
+1. The agent pulls the diff, runs a fast static‑analysis check (e.g., `gitlab‑code‑quality` or `ESLint`).  
+2. It sends the diff plus the analysis results to an **Anthropic LLM** (via the Anthropic API) and asks the model to:  
+   * Summarise the change in ≤ 2 sentences,  
+   * Highlight any risky patterns,  
+   * Propose concrete code‑fix suggestions (e.g., missing `await`, insecure string concatenation).  
+3. The agent posts a **structured comment** on the MR containing the summary, risk flags, and the suggested patches (as `suggestion` blocks).  
+4. If the developer approves the suggestion through a quick “👍 Apply” reaction, the agent automatically creates a **new branch**, applies the patch, and opens a **follow‑up MR** with the fix.  
 
-### Why it fits  
+**Why it fits**  
+| Criterion | How the idea satisfies it |
+|-----------|---------------------------|
+| **Must‑build #1** – public agent/flow | The agent source lives in a **public GitLab project** under the “GitLab AI Hackathon” group; the repo is linked in the submission. |
+| **Must‑build #2** – act, not just chat | The agent **reacts to MR‑opened/updated events** and **creates actionable suggestions/patches**. |
+| **Must‑build #3** – solve a friction point | Code‑review bottlenecks are a major pain point; the agent delivers a first‑pass review and auto‑fixes low‑risk issues, accelerating the review cycle. |
+| **Open‑source repo** | All code, a `LICENSE` (MIT), and a README with install/run steps are committed publicly. |
+| **Demo video ≤ 3 min** | A short walkthrough shows an MR being opened, the AI comment appearing, the “Apply” reaction, and the auto‑generated fix MR. |
+| **Technical depth** (Grand / Tech‑Impressive) | Uses GitLab Duo Agent SDK, integrates **Anthropic LLMs**, parses diff, generates patch suggestions, and automates branch creation – a non‑trivial pipeline. |
+| **Impact** (Most Impactful) | Cuts review turnaround from hours to minutes for routine changes, measurable by “time‑to‑first‑review.” |
+| **Usability** (Easiest to Use) | Installation is a one‑line `gitlab-runner` registration; the agent is enabled via a single project‑level variable; no extra UI needed. |
+| **Partner prize** – Anthropic | Direct Anthropic LLM usage positions the project for the “Most Impactful on GitLab & Anthropic” track. |
+| **Sustainability** | Runs only on MR events, negligible compute waste – a good candidate for the **Green Agent** bonus. |
 
-| Requirement | How it’s met |
-|-------------|--------------|
-| **Core tech** | Uses **Nova‑2‑Lite** for reasoning and **Nova‑Act** for agentic UI‑automation. |
-| **Scope** | A generative AI app built on AWS (Amplify, Lambda, SES, OpenSearch). |
-| **Simplicity** | Only two Nova services; the workflow is a linear “plan → fetch resources → push to doc”. |
-| **Impact** | Direct community benefit for students & lifelong learners (20 % impact score). |
-| **Technical depth** | Shows effective prompting, multi‑agent orchestration, integration with external SaaS – strong 60 % technical score. |
-| **Creativity** | Combines AI‑generated syllabus with automated document creation – a novel “AI‑teacher‑assistant” niche. |
 
----
-
-## 2️⃣ Idea: **Voice‑Summarize – Real‑Time Meeting Minutes Generator**  
-**Category:** Voice AI + Multimodal Understanding  
-
-### Description  
-- **Capture:** Participants join a simple AWS Chime‑style web UI and press “Start”. Audio streams to **Nova‑2‑Sonic** (speech‑to‑speech) in real time.  
-- **Processing:**  
-  1. **Nova‑2‑Sonic** converts speech to text, then re‑generates a concise spoken summary every 2 minutes (so listeners hear a “live minutes” overlay).  
-  2. Simultaneously, **Nova Multimodal Embeddings** index any shared slides/screenshots (uploaded via S3) and tag the transcript for “action‑item” detection.  
-- **Delivery:** At meeting end, a single MP3 of the AI‑crafted summary and a searchable transcript (with slide thumbnails) are stored in an S3 bucket and emailed to attendees.  
-
-### Why it fits  
-
-| Requirement | How it’s met |
-|-------------|--------------|
-| **Core tech** | **Nova‑2‑Sonic** for speech‑to‑speech plus **Nova Multimodal Embeddings** for slide understanding. |
-| **Scope** | End‑to‑end generative AI on AWS (Transcribe‑lite replacement, Lambda, S3, SES). |
-| **Simplicity** | One streaming pipeline + one post‑processing job – no complex model‑training. |
-| **Impact** | Saves hours of manual note‑taking for businesses, NGOs, remote teams (20 % impact). |
-| **Technical depth** | Real‑time streaming, multimodal tagging, and audio synthesis showcase strong engineering (60 %). |
-| **Creativity** | Live spoken summaries plus visual context linking is a fresh twist on meeting‑AI tools. |
 
 ---
 
-## 3️⃣ Idea: **Snap‑Shop Assistant – Visual Product Search & Checkout Bot**  
-**Category:** Multimodal Understanding + UI Automation (Nova‑Act)  
+**Idea 2 – “Secure‑Fix Auto‑Remediator”**  
 
-### Description  
-- **User Flow:** On a mobile web page, a shopper snaps a photo of an item they own (e.g., a lamp).  
-- **Engine:**  
-  1. **Nova Multimodal Embeddings** encode the photo and compare it against a catalog of product images stored in a Pinecone‑style vector DB on Amazon OpenSearch.  
-  2. The top‑5 matching products (title, price, rating) are shown instantly.  
-  3. If the user clicks “Buy”, **Nova‑Act** drives a headless Chromium session (via AWS Lambda Container) that logs into the chosen e‑commerce site, adds the item to cart, and completes checkout using the user’s saved payment token (PCI‑compliant via AWS Payment Cryptography).  
-- **Result:** One‑click purchase of visually‑matched items without manual search.  
+**Description**  
+A trigger‑driven Duo Agent that watches **pipeline completion events**. When a pipeline finishes with a **SAST (Static Application Security Testing) failure**, the agent:  
 
-### Why it fits  
+1. Extracts the vulnerability details from the SAST report.  
+2. Calls an **Anthropic (or Gemini on GCP) LLM** to generate a **minimal, safe code fix** for the reported issue.  
+3. Opens a **new branch** named `fix/vuln‑<id>`, applies the patch, and creates a **Merge Request** titled “Auto‑remediate <CVE‑id>”.  
+4. Adds a comment linking the original SAST finding to the new MR, so security owners can review/approve.  
 
-| Requirement | How it’s met |
-|-------------|--------------|
-| **Core tech** | Leverages **Nova Multimodal Embeddings** for image similarity and **Nova‑Act** for automated UI checkout. |
-| **Scope** | Full generative AI‑enhanced shopping assistant hosted on AWS (S3, Lambda, OpenSearch, DynamoDB). |
-| **Simplicity** | Two main components (image‑search + checkout bot) keep the architecture straightforward. |
-| **Impact** | Boosts accessibility for visually‑impaired shoppers and streamlines “photo‑to‑buy” for any retailer (20 % impact). |
-| **Technical depth** | Shows high‑quality multimodal retrieval and secure agentic automation – strong technical scoring. |
-| **Creativity** | Combines visual search with a fully automated purchase flow, a use‑case rarely seen in hackathons. |
+Optionally, the agent can push the MR to a **Google Cloud Cloud‑Build** job that runs a quick regression test before flagging the MR as “ready for review”.  
+
+**Why it fits**  
+| Criterion | How the idea satisfies it |
+|-----------|---------------------------|
+| **Public agent/flow** | Hosted in a **public GitLab project** under the hackathon group. |
+| **Acts on events** | Triggered by **pipeline‑finished** events with SAST failures; it **creates branches and MRs** – not a chat‑only bot. |
+| **Friction‑point solved** | Automates the tedious “manual fix + new MR” loop after security scans, dramatically reducing Time‑to‑Remediation. |
+| **Open‑source & license** | Repository includes an `Apache‑2.0` LICENSE and full documentation. |
+| **Demo ≤ 3 min** | Video shows a pipeline failing, the agent spawning a fix MR, and the security team approving it. |
+| **Technical depth** | Leverages the **GitLab Duo Agent API**, parses SAST JSON, integrates with an LLM, manipulates git objects, and optionally triggers GCP Cloud‑Build – strong engineering showcase. |
+| **Impact** | Directly improves security posture; can be measured by “average days to fix a vulnerability.” |
+| **Usability** | Once the agent is enabled, no developer action is needed; the flow is fully automatic. |
+| **Partner prizes** – Google Cloud & Anthropic | Optional use of **Google Cloud Build** for testing earns the “Most Impactful on GitLab & Google” track; LLM usage satisfies the Anthropic track as well. |
+| **Green Agent** | Runs only on failed pipelines, short‑lived compute; qualifies for sustainability bonuses. |
+
+
+
+---
+
+**Idea 3 – “Compliance‑Snapshot Generator”**  
+
+**Description**  
+A Duo Agent that triggers **when a Git tag (release) is created**. It performs the following steps:  
+
+1. Collects the **commit list**, **pipeline status**, and **glossary of open issues** associated with the tag.  
+2. Sends the collected metadata to **Google Cloud Document AI** (or an Anthropic LLM) to **draft a compliance report** (e.g., SOC 2, GDPR checklist).  
+3. Stores the generated PDF in a **public Google Cloud Storage bucket** (or GitLab package registry).  
+4. Posts a comment on the **release MR** (or the tag page) with a link to the PDF and a short summary.  
+
+The agent also writes a `compliance.json` artifact to the repo for downstream consumption (e.g., automated audit pipelines).  
+
+**Why it fits**  
+| Criterion | How the idea satisfies it |
+|-----------|---------------------------|
+| **Public agent/flow** | Implemented as a public GitLab Duo Agent in a public repo. |
+| **Trigger‑driven** | Fires on **tag‑created** events; it **creates artifacts and comments** – no chat‑only behavior. |
+| **Addresses friction** | Automates the manual, error‑prone task of assembling compliance documentation for each release. |
+| **Open‑source repo** | Contains full source, a `MIT` license, and step‑by‑step README. |
+| **Demo video** | Shows a developer creating a tag, the agent generating a PDF, and the report link appearing instantly. |
+| **Technical depth** | Integrates with **GitLab API**, **Google Cloud Document AI**, and manages secure storage of PDFs – a solid engineering effort. |
+| **Impact** | Guarantees every release ships with a compliant audit bundle, saving weeks of manual work for security/compliance teams. |
+| **Usability** | One‑time setup of a GCP service account; thereafter the workflow is fully automatic. |
+| **Partner prize** – Google Cloud | Direct use of **Google Cloud Document AI** and **GCS** lines up for the “Most Impactful on GitLab & Google” categories and the $13.5k Google Cloud prize pool. |
+| **Green Agent** | Runs only once per release, minimal compute; qualifies for sustainability bonuses. |  
+
+
 
 ---  
 
-### Quick Demo Checklist (fits submission artefacts)
+### Quick Checklist for All Ideas  
 
-| Idea | Demo (< 3 min) | #AmazonNova tag | Repo access |
-|------|----------------|-----------------|-------------|
-| Nova‑Tutor | Walkthrough: prompt → syllabus → generated Notion page. | ✔️ | Public GitHub (or private with email access) |
-| Voice‑Summarize | Live meeting capture → spoken summary snippet + final MP3. | ✔️ | Public GitHub |
-| Snap‑Shop Assistant | Photo upload → matching products → automated checkout animation. | ✔️ | Public GitHub |
+| Requirement | Satisfied? |
+|-------------|------------|
+| Public Duo Agent / flow (GitLab) | ✅ |
+| Agent *acts* on triggers (MR, pipeline, tag) | ✅ |
+| Solves an SDLC friction point (review, security fix, compliance) | ✅ |
+| Public open‑source repo with license | ✅ |
+| Clear project description in repo | ✅ |
+| ≤ 3‑min demo video (YouTube/Vimeo) | ✅ |
+| Eligibility & group access (GitLab AI Hackathon) | ✅ |
+| (Optional) Integration with Google Cloud or Anthropic for prize tracks | ✅ (Ideas 1–3 provide pathways) |
+| (Optional) Green / sustainable design | ✅ (event‑driven, low compute) |
 
-All three concepts satisfy the **mandatory Nova usage**, are **AWS‑native**, and balance **creativity**, **simplicity**, and **validity** to maximise the judging scores. Good luck! 🚀
+These three concepts balance **creativity** (AI‑driven code review, auto‑remediation, AI‑generated compliance docs), **simplicity** (single‑event triggers, modest external services), and **validity** against every mandatory rule and the judging focus areas. Good luck hacking!

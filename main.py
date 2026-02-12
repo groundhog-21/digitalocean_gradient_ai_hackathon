@@ -61,8 +61,11 @@ async def analyst_node(state: HackathonState):
     # In a production version, we would parse this content into the lists. 
     # For this hackathon step, we will store the raw analysis to be used by the Scaffolder.
     # Logic update: The LLM will now also identify the hackathon name.
+    # Clean the title more aggressively
+    raw_title = content.split('\n')[0].replace("#", "").split('–')[0].split('-')[0].strip()
+    
     return {
-        "hackathon_name": content.split('\n')[0].replace("#", "").strip(), # Grab first line as name
+        "hackathon_name": raw_title, 
         "requirements": [content],
         "required_keys": ["GRADIENT_MODEL_ACCESS_KEY"]
     }
