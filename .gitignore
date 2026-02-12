@@ -1,15 +1,18 @@
-# --- Security (The "Never Push" List) ---
+# Secrets and Config
 .env
-*.key
-
-# --- Python Environment ---
-.venv/
-__pycache__/
-**/*.pyc
-
-# --- DigitalOcean Gradient Specifics ---
 .gradient/
 
-# --- OS & IDE Clutter ---
+# Python Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Concept Files
+docs/
+
+# Local Sandbox Outputs
+output/
+
+# OS/IDE debris
 .DS_Store
 .vscode/

@@ -1,0 +1,484 @@
+﻿
+
+raw_overview         : @{value=Amazon Nova AI Hackathon
+                       Build your way with Amazon Nova
+                       Start project
+                       Find teammates
+                       Import from portfolio
+                       Who can participate
+                       Ages 18+ only
+                       Specific countries/territories excluded 
+                       View full rules
+                       33 more days to deadline
+                       View schedule
+                       
+                       Deadline
+                       
+                       Mar 17, 2026 @ 1:00am GMT+1 
+                       Online
+                       Public
+                       $40,000 in cash	3846 participants
+                       Amazon
+                       Devpost icon rgb30px
+                       Managed by Devpost
+                       Machine Learning/AI Beginner Friendly Social Good
+                       
+                       Welcome to the Amazon Nova AI Hackathon! 
+                       Amazon Nova is a portfolio of foundation models and services that deliver frontier 
+                       intelligence and industry-leading price performance. This is your chance to invent with 
+                       freedom and build with Nova's capabilities, including advanced reasoning, tool use, 
+                       multimodal understanding, voice AI, and UI workflow automation. 
+                       
+                       Nova 2 Lite, a fast, cost-effective reasoning model for everyday tasks.
+                       
+                       Nova 2 Sonic, a speech-to-speech model for conversational AI.
+                       
+                       Nova Act is a service to build and manage fleets of agents for automating production UI 
+                       workflows with high reliability.
+                       
+                       Nova multimodal embeddings: A state-of-the-art multimodal embedding model.
+                       
+                       Join and build innovative Gen AI applications using Amazon Nova!
+                       
+                        
+                       Why Participate?
+                       Innovate with Next-Gen AI. Explore the frontiers of generative AI and apply Nova's 
+                       differentiated features to solve real-world problems.
+                       
+                       Real-World Impact. Develop solutions that deliver measurable value for businesses or 
+                       create meaningful benefits for communities.
+                       
+                       Compete for Prizes. With a prize pool of $40,000 in cash and $55,000 in AWS credits, your 
+                       innovative projects could earn significant rewards. 
+                       
+                       Learn and Grow. Access dedicated resources, code examples, technical documentation, 
+                       virtual workshops, and office hours to support your journey.
+                       
+                       Showcase Your Skills. Gain recognition for your expertise and show everyone your hard 
+                       work. 
+                       
+                        
+                       Get Started
+                       Amazon Nova 2 developer guide for foundation models and for Nova Act
+                       
+                       Amazon Nova website
+                       
+                       More Resources to help you!
+                       
+                       Requirements
+                       What to Build
+                       Build a generative AI application using Amazon Nova on AWS. We encourage submissions that 
+                       reflect one of the following focus areas. You may use any preferred services, frameworks 
+                       (such as Strands Agents, LangChain), and tools (such as MCP, A2A), but your core solution 
+                       must use a Nova foundation model (such as Nova 2 Lite, Nova 2 Sonic, multimodal Embedding) 
+                       and/or the Nova Act service.
+                       
+                       Agentic AI: Build solutions where agents use Amazon Nova reasoning capabilities to tackle 
+                       complex, real-world problems. 
+                       
+                       Multimodal Understanding: Create rich multimodal applications that understand and/or 
+                       generate across text, documents, speech, images, or video using Nova.
+                       
+                       UI Automation: Build Nova Act-powered agents that automate real-world workflows across web 
+                       applications.
+                       
+                       Voice AI: Create real-time conversational voice experiences using Nova 2 Sonic.
+                       
+                       Freestyle: If your project doesn't fit into the above categories, submit it under the 
+                       Freestyle category.   
+                       
+                        
+                       What to Submit
+                       Submitter Type: Individual (student or professional), Team (student or professional), 
+                       Organization
+                       
+                       Category: Agentic AI, Multimodal Understanding, UI Automation, Voice AI, Freestyle
+                       
+                       Text description: A brief summary of your project, its purpose, and how it leverages 
+                       Amazon Nova foundation models
+                       
+                       Demo Video (Approx. 3 minutes): Upload a short video showcasing your project in action. 
+                       Please include the hashtag #AmazonNova
+                       
+                       Code repo: Share link to your project's code repository (e.g., Github). You can share a 
+                       public or private repository - if private, please share access with testing@devpost.com 
+                       and Amazon-Nova-hackathon@amazon.com
+                       
+                       Bonus Prize: 
+                       
+                       A published blog post on builder.aws.com covering how your project can positively affect 
+                       your target community. Discuss the potential benefits, envisioned real-world application, 
+                       and any plans for encouraging adoption
+                       
+                       See Official Rules for Details
+                       
+                       Please take the feedback survey after completing your project for a chance at $50 cash
+                       
+                       Prizes
+                       $40,000+ in prizes+ other prizes
+                       First Prize Overall
+                       $15,000 in cash
+                       1 winner
+                       $5,000 in AWS Credits
+                       
+                       Second Place Overall
+                       $7,000 in cash
+                       1 winner
+                       $5,000 in AWS Credits
+                       
+                       Best of Agentic System
+                       $3,000 in cash
+                       1 winner
+                       $5,000 in AWS Credits
+                       
+                       Best of Multimodal Understanding
+                       $3,000 in cash
+                       1 winner
+                       $5,000 in AWS Credits
+                       
+                       Best of UI Automation
+                       $3,000 in cash
+                       1 winner
+                       $5,000 in AWS Credits
+                       
+                       Best of Voice AI
+                       $3,000 in cash
+                       1 winner
+                       $5,000 in AWS Credits
+                       
+                       Best Student App
+                       $3,000 in cash
+                       1 winner
+                       $5,000 in AWS Credits
+                       
+                       Bonus Blog Post Prize
+                       100 winners
+                       $200 in AWS Credits
+                       
+                       Feedback Prize
+                       $50 in cash
+                       60 winners
+                       Devpost Achievements
+                       Submitting to this hackathon could earn you:
+                       
+                       
+                       First online hackathon
+                       
+                       X Hackathons
+                        level 1
+                       
+                       Hackathon Winner
+                        level 1
+                       
+                       Generalist
+                       Judges
+                       Jeff Barr
+                       Jeff Barr
+                       VP, AWS Evangelism | AWS
+                       
+                       Eshan Bhatnagar
+                       Eshan Bhatnagar
+                       Director, Product Management, AGI | Amazon
+                       
+                       Balu	Angaian
+                       Balu Angaian
+                       VP and Senior Partner, Practice Leader | IBM
+                       
+                       Sharon Li
+                       Sharon Li
+                       Senior Specialist SA | AWS
+                       
+                       Antje Barth
+                       Antje Barth
+                       Dev Relations, AGI Autonomy | Amazon
+                       
+                       Anuj	Jauhari
+                       Anuj Jauhari
+                       Senior PMM, Amazon Nova | AWS
+                       
+                       Dinesh Rajput
+                       Dinesh Rajput
+                       Principal PM, AGI | Amazon
+                       
+                       Nitin	Eusebius
+                       Nitin Eusebius
+                       Principal SA | AWS
+                       
+                       Corey Hill
+                       Corey Hill
+                       Principal PM, AGI | Amazon
+                       
+                       Kris Schultz
+                       Kris Schultz
+                       Principal SA, AGI | Amazon
+                       
+                       Felipe Blanes
+                       Felipe Blanes
+                       Sr Technical Program Mgr, AGI Autonomy | Amazon
+                       
+                       Lana Zhang
+                       Lana Zhang
+                       Senior Specialist SA | AWS
+                       
+                       Gorka Madariaga
+                       Gorka Madariaga
+                       Senior PMM, Amazon Nova | AWS
+                       
+                       Osman Ipek
+                       Osman Ipek
+                       Applied AI Architect, AGI | Amazon
+                       
+                       Wong Chun Yin Cyrus
+                       Wong Chun Yin Cyrus
+                       AWS Hero
+                       
+                       Wale Akinfaderin
+                       Wale Akinfaderin
+                       Sr Data Scientist, GenAI | AWS
+                       
+                       Sapeksha Vemulapati
+                       Sapeksha Vemulapati
+                       Principal PMT, AGI | Amazon
+                       
+                       Shreya Yembarwar
+                       Shreya Yembarwar
+                       Software Dev Engineer, AGI | Amazon
+                       
+                       Elmar Husmann
+                       Elmar Husmann
+                       Principal Tech BD, Global Education | AWS
+                       
+                       Sasi Kiran Milladi
+                       Sasi Kiran Milladi
+                       Principal ,Technical Account Manager | AWS
+                       
+                       Judging Criteria
+                       Technical Implementation - 60%
+                       Includes the quality, effectiveness, successful integration with Amazon Nova, and overall 
+                       system architecture.
+                       Enterprise or Community Impact - 20%
+                       Assesses how the solution delivers business value or creates meaningful benefits for 
+                       communities.
+                       Creativity and Innovation - 20%
+                       Includes the novelty of the approach and innovative use of multi-agent systems to solve 
+                       real-world problems
+                       ? Feedback Submission Judging Criteria
+                       Eligible Feedback Submissions will be evaluated based on the completeness, viability, and 
+                       potential impact of the feedback
+                       ? Blog Post Judging Criteria
+                       Evaluated on completeness and potential impact of the submissions that cover how your 
+                       Project can positively affect your target community and discusses the potential benefits, 
+                       envisioned real-world application, and any plans for encouraging adoption.; 
+                       PSPath=C:\Users\agbro\OneDrive\Desktop\Jupyter - VS 
+                       Code\digitalocean_gradient_ai_hackathon\devpost_input.txt; 
+                       PSParentPath=C:\Users\agbro\OneDrive\Desktop\Jupyter - VS 
+                       Code\digitalocean_gradient_ai_hackathon; PSChildName=devpost_input.txt; PSDrive=; 
+                       PSProvider=; ReadCount=1}
+hackathon_name       : **Amazonâ¯Novaâ¯AIâ¯Hackathon â Structured Setup Data**
+requirements         : {**Amazonâ¯Novaâ¯AIâ¯Hackathon â Structured Setup Data**
+                       
+                       | Category | Details |
+                       |----------|---------|
+                       | **1ï¸â£ Mandatory Requirements (MustâBuilds)** | â¢ **Core tech** â Your solution 
+                       **must** use **Amazonâ¯Nova** (any of the listed foundation models or the Novaâ¯Act 
+                       service).  <br>â- Novaâ¯2â¯Lite (reasoning) <br>â- Novaâ¯2â¯Sonic 
+                       (speechâtoâspeech) <br>â- Novaâ¯multimodalâ¯Embeddings <br>â- Novaâ¯Act (agent 
+                       fleet / UIâworkflow automation) <br>â¢ **Scope** â Build a **generative AI 
+                       application** on **AWS** that leverages one (or more) of the above. <br>â¢ **Allowed 
+                       focus categories** (you may pick any, or âFreestyleâ):  <br>â- Agenticâ¯AI  
+                       <br>â- Multimodalâ¯Understanding  <br>â- UIâ¯Automation (Novaâ¯Act)  <br>â- 
+                       Voiceâ¯AI (Novaâ¯2â¯Sonic)  <br>â- Freestyle  <br>â¢ **Submission artefacts** â 
+                       Text description, â¤3â¯min demo video (include #AmazonNova), code repo link (public or 
+                       private â if private give access toâ¯`testing@devpost.com` 
+                       andâ¯`AmazonâNovaâhackathon@amazon.com`). |
+                       | **2ï¸â£ Judging Criteria & Weighting** | |<u>Primary Hackathon Submission</u>| 
+                       |<u>Optional Feedback / BlogâPost Submissions</u>| |
+                       | â Technical Implementation | **60â¯%** â quality, effectiveness, integration with 
+                       Amazonâ¯Nova, overall system architecture. |
+                       | â Enterprise or Community Impact | **20â¯%** â business value or tangible community 
+                       benefit. |
+                       | â Creativity & Innovation | **20â¯%** â novelty of approach, innovative use of 
+                       multiâagent systems, realâworld problem solving. |
+                       | â Feedback Submission (optional) | Evaluated on **completeness, viability, potential 
+                       impact** of the feedback itself. |
+                       | â BlogâPost Prize (optional) | Evaluated on **completeness and potential impact** of 
+                       the post (how the project benefits the target community, adoption plan, etc.). |
+                       | **3ï¸â£ Proprietary Platforms (account required)** | â¢ **Amazon Web Services (AWS)** 
+                       â Needed to provision Nova models/services. <br>â¢ **Amazonâ¯Nova** (accessed through 
+                       AWS console/API). <br>â¢ **Devpost** â Required for hackathon registration, project 
+                       submission, and privateârepo access permissions. |
+                       | **4ï¸â£ Specific API / Access Keys Mentioned** | None are listed in the overview.  
+                       (Access to Nova models will be via standard AWS credentials; participants must have an AWS 
+                       account and appropriate IAM permissions, but no hardâcoded keys are provided in the 
+                       rules.) |
+                       | **5ï¸â£ Other Notable Logistics** | â¢ **Eligibility** â Agesâ¯18+, certain 
+                       countries/territories excluded (full list in âView full rulesâ). <br>â¢ **Prize 
+                       pool** â $40â¯k cash + $55â¯k AWS credits (plus many categoryâspecific awards). 
+                       <br>â¢ **Deadline** â 17â¯Marâ¯2026â¯@â¯01:00â¯amâ¯GMT+1 (online, public). 
+                       <br>â¢ **Required tags in demo** â Include the hashtag **#AmazonNova**. |
+                       
+                       ---  
+                       
+                       **Takeâaway for participants**  
+                       1. **Secure an AWS account** (and enable the Amazonâ¯Nova APIs).  
+                       2. **Design your project around at least one Nova foundation model or Novaâ¯Act** â 
+                       this is nonânegotiable.  
+                       3. **Focus on the three weighted criteria** (Technical Implementation > Impact > 
+                       Creativity) to maximise your score.  
+                       4. **Prepare a short demo video with the #AmazonNova tag** and ensure any private repo is 
+                       shared with the two email addresses listed.  
+                       5. **Optional bonuses** (blog post, feedback survey) can earn extra AWS credits or cash 
+                       â follow the separate judging rubrics.  }
+required_keys        : {GRADIENT_MODEL_ACCESS_KEY}
+gitignore_content    : *.log
+                       *.pyc
+                       *.tfstate
+                       .DS_Store
+                       .aws/
+                       .coverage
+                       .env
+                       .gradient/
+                       .idea/
+                       .pytest_cache/
+                       .terraform/
+                       .venv/
+                       .vscode/
+                       __pycache__/
+                       cdk.out/
+                       coverage/
+                       node_modules/
+requirements_content : boto3
+                       gradient-adk
+                       gradient-sdk
+                       langgraph
+                       numpy
+                       opencv-python
+                       pandas
+                       pillow
+                       pydub
+                       python-dotenv
+                       requests
+                       tqdm
+                       transformers
+setup_commands       : {cd ./output/amazon_nova_ai_hackathon, python -m venv .venv, pip install -r 
+                       requirements.txt}
+project_concepts     : {## 1ï¸â£ Idea: **NovaâTutor â AI StudyâPlanner & Homework Helper**  
+                       **Category:** Agenticâ¯AIâ¯+â¯UIâ¯Automation (NovaâAct)  
+                       
+                       ### Description  
+                       - **Frontend:** A lightweight web app (Reactâ¯+â¯Amplify) where students type a âWhat 
+                       do I need to learn this week?â prompt.  
+                       - **Core Engine:**  
+                         1. **Novaâ2âLite** generates a structured weekly syllabus, breaks topics into 
+                       biteâsize lessons, and writes short quiz questions.  
+                         2. **NovaâAct** orchestrates a multiâstep workflow:  
+                            * Pulls freeâopenâsource video / article links from AWSâOpenSearch,  
+                            * Populates a personalized Notion/GoogleâDocs template via the respective APIs,  
+                            * Sends a reminder email (SES) each evening.  
+                       - **Output:** A downloadable PDF + an interactive checklist that updates automatically as 
+                       the student marks tasks complete.  
+                       
+                       ### Why it fits  
+                       
+                       | Requirement | How itâs met |
+                       |-------------|--------------|
+                       | **Core tech** | Uses **Novaâ2âLite** for reasoning and **NovaâAct** for agentic 
+                       UIâautomation. |
+                       | **Scope** | A generative AI app built on AWS (Amplify, Lambda, SES, OpenSearch). |
+                       | **Simplicity** | Only two Nova services; the workflow is a linear âplan â fetch 
+                       resources â push to docâ. |
+                       | **Impact** | Direct community benefit for students & lifelong learners (20â¯% impact 
+                       score). |
+                       | **Technical depth** | Shows effective prompting, multiâagent orchestration, 
+                       integration with external SaaS â strong 60â¯% technical score. |
+                       | **Creativity** | Combines AIâgenerated syllabus with automated document creation â a 
+                       novel âAIâteacherâassistantâ niche. |
+                       
+                       ---
+                       
+                       ## 2ï¸â£ Idea: **VoiceâSummarize â RealâTime Meeting Minutes Generator**  
+                       **Category:** Voiceâ¯AIâ¯+â¯Multimodalâ¯Understanding  
+                       
+                       ### Description  
+                       - **Capture:** Participants join a simple AWSâ¯Chimeâstyle web UI and press 
+                       âStartâ. Audio streams to **Novaâ2âSonic** (speechâtoâspeech) in real time.  
+                       - **Processing:**  
+                         1. **Novaâ2âSonic** converts speech to text, then reâgenerates a concise spoken 
+                       summary every 2â¯minutes (so listeners hear a âlive minutesâ overlay).  
+                         2. Simultaneously, **Novaâ¯Multimodalâ¯Embeddings** index any shared 
+                       slides/screenshots (uploaded via S3) and tag the transcript for âactionâitemâ 
+                       detection.  
+                       - **Delivery:** At meeting end, a single MP3 of the AIâcrafted summary and a searchable 
+                       transcript (with slide thumbnails) are stored in an S3 bucket and emailed to attendees.  
+                       
+                       ### Why it fits  
+                       
+                       | Requirement | How itâs met |
+                       |-------------|--------------|
+                       | **Core tech** | **Novaâ2âSonic** for speechâtoâspeech plus 
+                       **Novaâ¯Multimodalâ¯Embeddings** for slide understanding. |
+                       | **Scope** | Endâtoâend generative AI on AWS (Transcribeâlite replacement, Lambda, 
+                       S3, SES). |
+                       | **Simplicity** | One streaming pipeline + one postâprocessing job â no complex 
+                       modelâtraining. |
+                       | **Impact** | Saves hours of manual noteâtaking for businesses, NGOs, remote teams 
+                       (20â¯% impact). |
+                       | **Technical depth** | Realâtime streaming, multimodal tagging, and audio synthesis 
+                       showcase strong engineering (60â¯%). |
+                       | **Creativity** | Live spoken summaries plus visual context linking is a fresh twist on 
+                       meetingâAI tools. |
+                       
+                       ---
+                       
+                       ## 3ï¸â£ Idea: **SnapâShop Assistant â Visual Product Search & Checkout Bot**  
+                       **Category:** Multimodalâ¯Understandingâ¯+â¯UIâ¯Automation (NovaâAct)  
+                       
+                       ### Description  
+                       - **User Flow:** On a mobile web page, a shopper snaps a photo of an item they own (e.g., 
+                       a lamp).  
+                       - **Engine:**  
+                         1. **Novaâ¯Multimodalâ¯Embeddings** encode the photo and compare it against a catalog 
+                       of product images stored in a Pineconeâstyle vector DB on Amazonâ¯OpenSearch.  
+                         2. The topâ5 matching products (title, price, rating) are shown instantly.  
+                         3. If the user clicks âBuyâ, **NovaâAct** drives a headless Chromium session (via 
+                       AWSâ¯Lambdaâ¯Container) that logs into the chosen eâcommerce site, adds the item to 
+                       cart, and completes checkout using the userâs saved payment token (PCIâcompliant via 
+                       AWSâ¯Paymentâ¯Cryptography).  
+                       - **Result:** Oneâclick purchase of visuallyâmatched items without manual search.  
+                       
+                       ### Why it fits  
+                       
+                       | Requirement | How itâs met |
+                       |-------------|--------------|
+                       | **Core tech** | Leverages **Novaâ¯Multimodalâ¯Embeddings** for image similarity and 
+                       **NovaâAct** for automated UI checkout. |
+                       | **Scope** | Full generative AIâenhanced shopping assistant hosted on AWS (S3, Lambda, 
+                       OpenSearch, DynamoDB). |
+                       | **Simplicity** | Two main components (imageâsearch + checkout bot) keep the 
+                       architecture straightforward. |
+                       | **Impact** | Boosts accessibility for visuallyâimpaired shoppers and streamlines 
+                       âphotoâtoâbuyâ for any retailer (20â¯% impact). |
+                       | **Technical depth** | Shows highâquality multimodal retrieval and secure agentic 
+                       automation â strong technical scoring. |
+                       | **Creativity** | Combines visual search with a fully automated purchase flow, a 
+                       useâcase rarely seen in hackathons. |
+                       
+                       ---  
+                       
+                       ### Quick Demo Checklist (fits submission artefacts)
+                       
+                       | Idea | Demo (<â¯3â¯min) | #AmazonNova tag | Repo access |
+                       |------|----------------|-----------------|-------------|
+                       | NovaâTutor | Walkthrough: prompt â syllabus â generated Notion page. | âï¸ | 
+                       Public GitHub (or private with email access) |
+                       | VoiceâSummarize | Live meeting capture â spoken summary snippet + final MP3. | 
+                       âï¸ | Public GitHub |
+                       | SnapâShop Assistant | Photo upload â matching products â automated checkout 
+                       animation. | âï¸ | Public GitHub |
+                       
+                       All three concepts satisfy the **mandatory Nova usage**, are **AWSânative**, and balance 
+                       **creativity**, **simplicity**, and **validity** to maximise the judging scores. Good 
+                       luck! ð}
+
+
+
