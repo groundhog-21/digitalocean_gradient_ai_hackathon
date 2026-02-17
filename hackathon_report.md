@@ -1,108 +1,110 @@
+
 # 🏆 Hackathon Cold-Start Report
 
 ## 📋 1. Analysis & Requirements
-**GitLab AI Hackathon – Structured Setup Summary**
+**GitLab AI Hackathon – Structured Setup Data**
 
 ---
 
-## 1. Mandatory Requirements (Must‑Builds)
+### 1️⃣ Mandatory Requirements (Must‑Builds)
 
-| # | Requirement | Details / How to satisfy |
-|---|-------------|--------------------------|
-| 1 | **Create at least one custom **public** agent OR a public flow** | Must be built with the *GitLab Duo Agent Platform*.  The agent/flow must be **public** (visible to anyone) and hosted in a **GitLab project** under the “GitLab AI Hackathon” group. |
-| 2 | **Agent must act, not just chat** | Agents must react to **triggers/events** (e.g., merge‑request opened, pipeline finished) and **take automated actions** (e.g., create tests, run security scans, generate compliance reports). Pure Q&A chat‑bots are disqualified. |
-| 3 | **Solve a software‑development‑lifecycle friction point** | Acceptable themes include: <br>• Automated security fixes  <br>• Streamlined code reviews  <br>• Generation of compliance reports  <br>• Risk‑flagging, test generation, deployment automation, etc. |
-| 4 | **Open‑source, public repo** | – URL to the project must be supplied.  <br>– Repository must be **public** and include all source code, assets, and instructions to run the agent.  <br>– Must contain an identifiable open‑source license (visible in the “Project information” section). |
-| 5 | **Project description** | A clear textual description explaining features, functionality, and the problem the agent solves. |
-| 6 | **Demo video (≤ 3 min)** | Upload to **YouTube** or **Vimeo**, set to **public**, and link in the submission. Judges will only watch the first three minutes. |
-| 7 | **Eligibility** | • Participant must be of legal age in their country. <br>• Open to all countries/territories *except* the standard exclusions listed in the full rules. |
-| 8 | **Group access** | Request access to the “GitLab AI Hackathon” group on GitLab before submitting. |
+| # | Requirement | Details / Why it’s mandatory |
+|---|-------------|------------------------------|
+| 1 | **Create at least one *custom public agent* or *public flow*** | Must be built on the **GitLab Duo Agent Platform**; agents must react to triggers and take action (chat‑only bots are disqualified). |
+| 2 | **Remove friction from the software development lifecycle** | Projects should automate something concrete – e.g., security fixes, code‑review assistance, compliance report generation, risk‑flagging, deployment pipelines, etc. |
+| 3 | **Public, open‑source repository** | URL to a **public GitLab project** that contains all source code, assets, and clear licensing (primary license must be displayed at the top of the repo). |
+| 4 | **Demo video ≤ 3 minutes** | Hosted publicly on YouTube or Vimeo; judges will only watch the first three minutes. |
+| 5 | **Eligibility** – participant must be of legal age in their country of residence; all countries/territories allowed except “standard exceptions” (the usual sanction‑list exclusions). |
+| 6 | **Access to the GitLab Duo Agent Platform** | Must **request access** to the “GitLab AI Hackathon group” (via the Discord channel or the provided sign‑up link). |
+| 7 | **Compliance with Devpost rules** – follow the “Full Rules” link for legal and submission guidelines. |
 
-> **Bottom‑line “Must‑Build”**: a *public, trigger‑driven GitLab Duo Agent (or flow) that automates a real‑world developer workflow and is delivered as an open‑source GitLab repo with description + ≤3‑min demo video.
-
----
-
-## 2. Judging Criteria & Relative Emphasis (as reflected by prize categories)
-
-| Prize / Category | Cash Value | Implicit Judging Focus | Relative Weight (high‑medium‑low) |
-|------------------|------------|------------------------|-----------------------------------|
-| **Grand Prize** | $15,000 | Overall excellence (technical, impact, usability, innovation). | ★★★ |
-| **Most Technically Impressive** | $5,000 | Depth of engineering, clever use of GitLab Duo Agent APIs, robustness. | ★★ |
-| **Most Impactful** | $5,000 | Measurable benefit to developers / workflow efficiency. | ★★ |
-| **Easiest to Use** | $5,000 | UX, documentation, onboarding simplicity. | ★★ |
-| **Honorable Mention** (6×) | $500 each | Good projects that didn’t fit other top categories. | ★ |
-| **Sustainable Design Bonus** (4×) | $500 each | Environmental / resource‑efficient design (e.g., Green Agents). | ★ |
-| **Most Impactful on GitLab & Google – Grand** | $10,000 | Deep integration with **Google Cloud** services; demonstrable impact. | ★★ |
-| **Most Impactful on GitLab & Google – Runner‑Up** | $3,500 | Same as above, but secondary tier. | ★ |
-| **Most Impactful on GitLab & Anthropic – Grand** | $10,000 | Strong use of **Anthropic** LLMs through GitLab; high impact. | ★★ |
-| **Most Impactful on GitLab & Anthropic – Runner‑Up** | $3,500 | Same as above, secondary tier. | ★ |
-| **Green Agent Prize** | $3,000 | Agents that reduce carbon footprint (e.g., efficient CI, serverless, low‑compute). | ★★ |
-| **$13,500 prize for Google Cloud use** | $13,500 total (across sub‑prizes) | Projects that explicitly leverage **Google Cloud** resources. | ★★ |
-| **$13,500 prize for Anthropic use** | $13,500 total (across sub‑prizes) | Projects that embed **Anthropic** models via the platform. | ★★ |
-
-**Interpretation:**  
-- *Technical depth* and *impact* are the two heaviest levers (Grand, Tech‑Impressive, Impact categories).  
-- *Integration with partner platforms* (Google Cloud, Anthropic) carries a sizable monetary incentive, indicating a strong weighting for those who can demonstrate real usage.  
-- *Usability* (Easiest to Use) and *sustainability* (Green Agent, Sustainable Design) are also explicitly rewarded but with smaller cash values.
+> **Bottom line:**  *An eligible entry is a public GitLab repo that contains a working, trigger‑driven GitLab Agent (or Flow) that actually performs a useful automation, accompanied by a short demo and proper licensing.*
 
 ---
 
-## 3. Proprietary Platforms Requiring Account Sign‑Ups
+### 2️⃣ Judging Criteria & Relative Importance (inferred from prize structure)
 
-| Platform | Reason for Sign‑Up / Access |
-|----------|-----------------------------|
-| **GitLab** (core) | Create a GitLab account, request access to the “GitLab AI Hackathon” group, and host the public repo (must be on GitLab). |
-| **GitLab Duo Agent Platform** | Requires special access (request via the hackathon site) to use the agent SDK, flows, and prompt library. |
-| **Discord** | Join the official hackathon Discord server (specifically the `#ai-hackathon` channel) for community, support, and announcements. |
-| **Google Cloud Platform (GCP)** | Needed to qualify for the $13,500 Google Cloud prize and the “Most Impactful on GitLab & Google” categories. Participants must have a GCP account and appropriate API credentials. |
-| **Anthropic** (LLM provider) | Required for the $13,500 Anthropic prize and the “Most Impactful on GitLab & Anthropic” categories. Participants need an Anthropic account / API key. |
-| **YouTube / Vimeo** | Required to host the demo video (publicly viewable). While free, an account is still needed. |
+| Category (Prize) | Cash Value | Points (Swag) | Implied Weight* |
+|-------------------|------------|---------------|-----------------|
+| **Grand Prize** (overall) | $15,000 | 1,000 pts | ★★★★★ (top priority) |
+| **Most Technically Impressive** | $5,000 | 1,000 pts | ★★★★☆ |
+| **Most Impactful** | $5,000 | 1,000 pts | ★★★★☆ |
+| **Easiest to Use** | $5,000 | 1,000 pts | ★★★★☆ |
+| **Most Impactful on GitLab & Google – Grand** | $10,000 | 500 pts | ★★★★☆ |
+| **Most Impactful on GitLab & Google – Runner‑Up** | $3,500 | 500 pts | ★★★☆☆ |
+| **Most Impactful on GitLab & Anthropic – Grand** | $10,000 | 500 pts | ★★★★☆ |
+| **Most Impactful on GitLab & Anthropic – Runner‑Up** | $3,500 | 500 pts | ★★★☆☆ |
+| **Green Agent Prize** | $3,000 | 500 pts | ★★★☆☆ (focus on sustainability) |
+| **Sustainable Design Bonus** | $500 | 320 pts | ★★☆☆☆ |
+| **Honorable Mention** | $500 (×6) | 320 pts each | ★★☆☆☆ |
+| **Most Impactful on GitLab & Google – Runner‑Up** | $3,500 | 500 pts | ★★★☆☆ |
 
-> **Note:** No mention of DigitalOcean or other proprietary cloud services in this hackathon description.
+\*Weight is a qualitative interpretation: higher cash → higher judging emphasis. The “Grand Prize” and the two “Impactful on GitLab & Google/Anthropic” categories are the most heavily weighted, indicating judges will look for **overall excellence + deep integration with the named platform**.
+
+**Key judging focus areas (derived from prize titles):**
+
+1. **Technical depth / novelty** – code quality, agent architecture, integration with GitLab Duo.
+2. **Impact** – measurable benefit to developers / reduction of friction.
+3. **Usability** – clear UI/UX, easy onboarding, documentation.
+4. **Platform‑specific impact** – extra points for leveraging **Google Cloud** or **Anthropic** APIs.
+5. **Sustainability / Green** – low‑resource usage, eco‑friendly design.
+6. **Design / polish** – overall presentation, demo quality, documentation.
 
 ---
 
-## 4. Specific API Keys / Access Keys Mentioned
+### 3️⃣ Proprietary Platforms (account‑sign‑up required)
 
-- **Explicit keys:** *None* are listed in the overview text.  
-- **Implicit keys required for prize eligibility:**  
-  - **Google Cloud API credentials** (service‑account key, OAuth token, etc.) if you intend to use GCP services.  
-  - **Anthropic API key** (or equivalent authentication token) if you intend to run Anthropic models through GitLab.  
+| Platform | Why it matters for the hackathon |
+|----------|-----------------------------------|
+| **GitLab Duo Agent Platform** | Core of the challenge – participants must request access, create agents/flows, and host code on GitLab. |
+| **GitLab (hosted service)** | Repository hosting, CI/CD pipelines, and the Duo Agent runtime. |
+| **Google Cloud** | Eligible for a $13,500 bonus prize; participants must have a Google Cloud account to call its services (e.g., Vertex AI, Cloud Functions). |
+| **Anthropic** | Eligible for a $13,500 bonus prize; participants need an Anthropic API account (e.g., Claude) to power agents. |
+| **Discord** (optional) | Used for community chat and “#ai-hackathon” channel – not a judging factor but required for community interaction. |
 
-These keys must be **obtained by the participant** from the respective provider’s console; they are **not supplied in the hackathon description**.
+> **Action:**  Ensure each participant creates the necessary accounts **before** starting development, otherwise the “platform‑specific impact” prize categories are inaccessible.
 
 ---
 
-### Quick Reference – What You Must Have Before Starting
+### 4️⃣ Specific API / Access Keys Mentioned
 
-| Item | Why Needed |
-|------|------------|
-| GitLab account (personal) + access to the Hackathon group | Host code, create agents/flows, submit URL. |
-| Discord account (optional but recommended) | Community support, announcements. |
-| Google Cloud account **or** Anthropic account (or both) – if you target the partner‑specific prize tracks | Access to the respective APIs for integration. |
-| YouTube or Vimeo account | Publish the ≤3‑min demo video. |
-| Open‑source license file in the repo (e.g., MIT, Apache‑2.0) | Required for eligibility. |
-| Ability to generate a **public** GitLab project URL | Submission requirement. |
+The overview **does not list any concrete API keys or tokens**. It only references the need to use:
+
+* Google Cloud APIs (you’ll need a Google Cloud API key / service‑account credentials).
+* Anthropic APIs (you’ll need an Anthropic API key).
+
+**No explicit key strings are provided** in the Devpost description, so teams must obtain their own keys after signing up for the respective services.
+
+---
+
+### 📋 Quick Checklist for Participants
+
+| ✅ | Item |
+|---|------|
+| 1 | Sign‑up for **GitLab** and request access to the **GitLab AI Hackathon group** (Discord link). |
+| 2 | (Optional but prize‑winning) Create accounts & obtain API keys for **Google Cloud** and/or **Anthropic**. |
+| 3 | Build **≥ 1 public custom Agent or Flow** that reacts to GitLab events and performs a concrete automation. |
+| 4 | Publish the full source in a **public GitLab repo** with a clearly visible license. |
+| 5 | Write a concise **text description** of features/functionality. |
+| 6 | Record a **≤ 3 min demo video** (YouTube/Vimeo, public). |
+| 7 | Submit the project URL and accompanying assets on **Devpost** before **Mar 25 2026 @ 7 pm GMT+1**. |
+| 8 | Highlight any **Google Cloud** or **Anthropic** integration in the submission to be eligible for the $13,500 bonus prizes. |
+| 9 | Emphasize sustainability if targeting the **Green Agent** or **Sustainable Design** bonuses. |
 
 --- 
 
-**End of Structured Summary**.
+**Overall Insight:**  The hackathon rewards not just raw technical chops, but *real‑world impact* and *deep integration* with the GitLab Duo Agent Platform plus optional cloud partners. Teams that ship a polished, trigger‑driven agent, clearly document it, and demonstrate measurable developer‑experience gains will score highest across the judging criteria.
 
 ## 🛠️ 2. Infrastructure Blueprint
 ### .gitignore Content:
 ```text
-*.bak
 *.log
 *.pyc
-*.sublime-project
-*.sublime-workspace
-*.tmp
 .DS_Store
 .aws/
 .env
 .gradient/
 .idea/
-.terraform/
 .venv/
 .vscode/
 __pycache__/
@@ -112,12 +114,12 @@ coverage/
 dist/
 node_modules/
 ```
+
 ### requirements.txt Content:
 ```text
+aiohttp
 anthropic
-fastapi
-google-cloud-logging
-google-cloud-storage
+google-cloud-aiplatform
 gradient-adk
 gradient-sdk
 langgraph
@@ -125,111 +127,95 @@ pydantic
 python-dotenv
 python-gitlab
 requests
-uvicorn
+rich
 ```
-## 🚀 3. Proposed Concepts (Singles & Doubles)
-**Idea 1 – “Merge‑Guard AI Reviewer”**  
 
-**Description**  
-A GitLab Duo Agent that fires **when a Merge Request (MR) is opened or updated**.  
-1. The agent pulls the diff, runs a fast static‑analysis check (e.g., `gitlab‑code‑quality` or `ESLint`).  
-2. It sends the diff plus the analysis results to an **Anthropic LLM** (via the Anthropic API) and asks the model to:  
-   * Summarise the change in ≤ 2 sentences,  
-   * Highlight any risky patterns,  
-   * Propose concrete code‑fix suggestions (e.g., missing `await`, insecure string concatenation).  
-3. The agent posts a **structured comment** on the MR containing the summary, risk flags, and the suggested patches (as `suggestion` blocks).  
-4. If the developer approves the suggestion through a quick “👍 Apply” reaction, the agent automatically creates a **new branch**, applies the patch, and opens a **follow‑up MR** with the fix.  
+## 🚀 3. Proposed Concepts
+## Idea 1 – **SecureMerge Bot**  
+**What it does**  
+A public **GitLab Duo Agent** that watches **Merge‑Request events** and automatically:  
 
-**Why it fits**  
-| Criterion | How the idea satisfies it |
-|-----------|---------------------------|
-| **Must‑build #1** – public agent/flow | The agent source lives in a **public GitLab project** under the “GitLab AI Hackathon” group; the repo is linked in the submission. |
-| **Must‑build #2** – act, not just chat | The agent **reacts to MR‑opened/updated events** and **creates actionable suggestions/patches**. |
-| **Must‑build #3** – solve a friction point | Code‑review bottlenecks are a major pain point; the agent delivers a first‑pass review and auto‑fixes low‑risk issues, accelerating the review cycle. |
-| **Open‑source repo** | All code, a `LICENSE` (MIT), and a README with install/run steps are committed publicly. |
-| **Demo video ≤ 3 min** | A short walkthrough shows an MR being opened, the AI comment appearing, the “Apply” reaction, and the auto‑generated fix MR. |
-| **Technical depth** (Grand / Tech‑Impressive) | Uses GitLab Duo Agent SDK, integrates **Anthropic LLMs**, parses diff, generates patch suggestions, and automates branch creation – a non‑trivial pipeline. |
-| **Impact** (Most Impactful) | Cuts review turnaround from hours to minutes for routine changes, measurable by “time‑to‑first‑review.” |
-| **Usability** (Easiest to Use) | Installation is a one‑line `gitlab-runner` registration; the agent is enabled via a single project‑level variable; no extra UI needed. |
-| **Partner prize** – Anthropic | Direct Anthropic LLM usage positions the project for the “Most Impactful on GitLab & Anthropic” track. |
-| **Sustainability** | Runs only on MR events, negligible compute waste – a good candidate for the **Green Agent** bonus. |
+1. Runs the built‑in GitLab SAST/DAST scanners.  
+2. Sends the raw findings to **Anthropic Claude** (via Anthropic API) which translates each vulnerability into a short, developer‑friendly explanation plus a concrete code‑fix suggestion.  
+3. Posts a single comment on the MR that contains:  
+   * a risk rating,  
+   * the AI‑generated remediation snippet, and  
+   * a “✅ Approve if you trust the fix” button that, when clicked, triggers a **GitLab Flow** to apply the fix in a new branch and open a second MR.  
 
+The whole workflow lives in a **public GitLab repo** (MIT‑licensed) and is demonstrated in a **≤ 3‑minute video**.
 
+**Why it fits the hackathon**  
+
+| Judging focus | How the bot scores |
+|---|---|
+| **Technical depth / novelty** | Combines Duo Agent triggers, GitLab’s native security scanners, and Anthropic LLM prompt‑engineering to auto‑rewrite code. |
+| **Impact** | Cuts the “security‑fix friction” loop from days to minutes; developers see a ready‑to‑apply patch instead of a raw scanner dump. |
+| **Usability** | Single‑click “Approve” button, no extra UI; all interactions happen inside the familiar MR view. |
+| **Platform‑specific impact** | Direct Anthropic integration qualifies for the **$13.5 k “Most Impactful on GitLab & Anthropic”** prize. |
+| **Sustainability** | Runs only on MR events; minimal compute time – low carbon footprint (bonus for Green Agent). |
+| **Polish** | Demo shows the MR lifecycle, the comment, the auto‑generated fix, and the final merged result. |
 
 ---
 
-**Idea 2 – “Secure‑Fix Auto‑Remediator”**  
+## Idea 2 – **EcoDeploy Scheduler**  
+**What it does**  
+A public **GitLab Duo Flow** that sits between CI pipeline completion and production deployment:  
 
-**Description**  
-A trigger‑driven Duo Agent that watches **pipeline completion events**. When a pipeline finishes with a **SAST (Static Application Security Testing) failure**, the agent:  
+1. Listens for **pipeline‑finished** events on the `staging` environment.  
+2. Calls **Google Cloud’s Carbon‑Aware Computing API** to fetch the latest carbon intensity forecast for all supported GCP regions.  
+3. If the current region’s forecast exceeds a configurable threshold, the flow automatically **re‑routes the deployment** to the greener region *or* schedules the deployment to the next low‑intensity time‑window (via Cloud Scheduler).  
+4. Posts an immutable **“Green‑Deployment Report”** comment on the pipeline with carbon‑saved estimate and a link to the GCP console.  
 
-1. Extracts the vulnerability details from the SAST report.  
-2. Calls an **Anthropic (or Gemini on GCP) LLM** to generate a **minimal, safe code fix** for the reported issue.  
-3. Opens a **new branch** named `fix/vuln‑<id>`, applies the patch, and creates a **Merge Request** titled “Auto‑remediate <CVE‑id>”.  
-4. Adds a comment linking the original SAST finding to the new MR, so security owners can review/approve.  
+All code lives in a **public GitLab repository** (Apache‑2.0) with a short demo video illustrating a pipeline being postponed to a greener slot.
 
-Optionally, the agent can push the MR to a **Google Cloud Cloud‑Build** job that runs a quick regression test before flagging the MR as “ready for review”.  
+**Why it fits the hackathon**  
 
-**Why it fits**  
-| Criterion | How the idea satisfies it |
-|-----------|---------------------------|
-| **Public agent/flow** | Hosted in a **public GitLab project** under the hackathon group. |
-| **Acts on events** | Triggered by **pipeline‑finished** events with SAST failures; it **creates branches and MRs** – not a chat‑only bot. |
-| **Friction‑point solved** | Automates the tedious “manual fix + new MR” loop after security scans, dramatically reducing Time‑to‑Remediation. |
-| **Open‑source & license** | Repository includes an `Apache‑2.0` LICENSE and full documentation. |
-| **Demo ≤ 3 min** | Video shows a pipeline failing, the agent spawning a fix MR, and the security team approving it. |
-| **Technical depth** | Leverages the **GitLab Duo Agent API**, parses SAST JSON, integrates with an LLM, manipulates git objects, and optionally triggers GCP Cloud‑Build – strong engineering showcase. |
-| **Impact** | Directly improves security posture; can be measured by “average days to fix a vulnerability.” |
-| **Usability** | Once the agent is enabled, no developer action is needed; the flow is fully automatic. |
-| **Partner prizes** – Google Cloud & Anthropic | Optional use of **Google Cloud Build** for testing earns the “Most Impactful on GitLab & Google” track; LLM usage satisfies the Anthropic track as well. |
-| **Green Agent** | Runs only on failed pipelines, short‑lived compute; qualifies for sustainability bonuses. |
-
-
+| Judging focus | How the flow scores |
+|---|---|
+| **Technical depth / novelty** | Bridges GitLab CI events, Google Cloud carbon‑aware APIs, and automated rescheduling of deployments. |
+| **Impact** | Directly reduces the carbon cost of each release; teams can quantify saved kg CO₂ e. |
+| **Usability** | No manual steps – developers just merge; the flow handles scheduling transparently. |
+| **Platform‑specific impact** | Uses **Google Cloud** services → eligible for the **$13.5 k “Most Impactful on GitLab & Google”** prize. |
+| **Green Agent prize** | Core purpose is sustainability; qualifies for the $3 k “Green Agent” and the $500 “Sustainable Design” bonus. |
+| **Polish** | Demo includes the carbon forecast UI, the automatic region switch, and the final green‑deployment badge. |
 
 ---
 
-**Idea 3 – “Compliance‑Snapshot Generator”**  
+## Idea 3 – **Compliance‑Doc Builder**  
+**What it does**  
+A public **GitLab Duo Agent** that creates a **ready‑to‑share compliance report** every time code is pushed to the `main` branch:  
 
-**Description**  
-A Duo Agent that triggers **when a Git tag (release) is created**. It performs the following steps:  
+1. Triggers on **push** events.  
+2. Scans the repository with GitLab’s **Security & License Scanning** and **IaC (Terraform/Kubernetes) policies**.  
+3. Sends the raw findings to a **Google Cloud Function** that uses **Document AI** to format them into a clean PDF (sections: security findings, license mismatches, infra‑as‑code policy violations).  
+4. Commits the PDF back to a `compliance/` folder and adds a comment on the push with a download link.  
 
-1. Collects the **commit list**, **pipeline status**, and **glossary of open issues** associated with the tag.  
-2. Sends the collected metadata to **Google Cloud Document AI** (or an Anthropic LLM) to **draft a compliance report** (e.g., SOC 2, GDPR checklist).  
-3. Stores the generated PDF in a **public Google Cloud Storage bucket** (or GitLab package registry).  
-4. Posts a comment on the **release MR** (or the tag page) with a link to the PDF and a short summary.  
+The entire system is open‑source (BSD‑3‑Clause) and showcased in a 3‑minute demo that walks through a push, the generated PDF, and the automatic commit.
 
-The agent also writes a `compliance.json` artifact to the repo for downstream consumption (e.g., automated audit pipelines).  
+**Why it fits the hackathon**  
 
-**Why it fits**  
-| Criterion | How the idea satisfies it |
-|-----------|---------------------------|
-| **Public agent/flow** | Implemented as a public GitLab Duo Agent in a public repo. |
-| **Trigger‑driven** | Fires on **tag‑created** events; it **creates artifacts and comments** – no chat‑only behavior. |
-| **Addresses friction** | Automates the manual, error‑prone task of assembling compliance documentation for each release. |
-| **Open‑source repo** | Contains full source, a `MIT` license, and step‑by‑step README. |
-| **Demo video** | Shows a developer creating a tag, the agent generating a PDF, and the report link appearing instantly. |
-| **Technical depth** | Integrates with **GitLab API**, **Google Cloud Document AI**, and manages secure storage of PDFs – a solid engineering effort. |
-| **Impact** | Guarantees every release ships with a compliant audit bundle, saving weeks of manual work for security/compliance teams. |
-| **Usability** | One‑time setup of a GCP service account; thereafter the workflow is fully automatic. |
-| **Partner prize** – Google Cloud | Direct use of **Google Cloud Document AI** and **GCS** lines up for the “Most Impactful on GitLab & Google” categories and the $13.5k Google Cloud prize pool. |
-| **Green Agent** | Runs only once per release, minimal compute; qualifies for sustainability bonuses. |  
+| Judging focus | How the agent scores |
+|---|---|
+| **Technical depth / novelty** | Marries Duo Agent event handling, GitLab scanning, and Google Document AI for polished reporting. |
+| **Impact** | Eliminates manual compliance‑report generation, saving hours for security & ops teams. |
+| **Usability** | One‑time setup; after that the PDF appears automatically in the repo – developers just keep coding. |
+| **Platform‑specific impact** | Uses **Google Cloud** APIs → qualifies for the Google‑focused impact prizes. |
+| **Sustainability** | Runs only on push events; lightweight processing, low compute cost. |
+| **Polish** | Demo highlights the PDF layout, the automatic commit, and a quick glance at the compliance summary. |
 
+---
 
+### Quick sanity check against mandatory requirements  
 
----  
+| Requirement | Covered by each idea |
+|---|---|
+| **1️⃣ Custom public agent/flow** | SecureMerge Bot (Agent), EcoDeploy Scheduler (Flow), Compliance‑Doc Builder (Agent) |
+| **2️⃣ Remove friction from SDLC** | All three automate a concrete step (security fix, green deployment, compliance reporting). |
+| **3️⃣ Public open‑source repo** | Each idea explicitly mentions a public GitLab repo with a standard OSS license. |
+| **4️⃣ Demo ≤ 3 min** | All ideas are scoped for a concise three‑minute walkthrough. |
+| **5️⃣ Eligibility** | No restriction beyond standard rules – all ideas are universally eligible. |
+| **6️⃣ Access to Duo Agent Platform** | Assumed by participants; each project is built on that platform. |
+| **7️⃣ Devpost compliance** | The project descriptions include all required assets for a proper Devpost submission. |
 
-### Quick Checklist for All Ideas  
-
-| Requirement | Satisfied? |
-|-------------|------------|
-| Public Duo Agent / flow (GitLab) | ✅ |
-| Agent *acts* on triggers (MR, pipeline, tag) | ✅ |
-| Solves an SDLC friction point (review, security fix, compliance) | ✅ |
-| Public open‑source repo with license | ✅ |
-| Clear project description in repo | ✅ |
-| ≤ 3‑min demo video (YouTube/Vimeo) | ✅ |
-| Eligibility & group access (GitLab AI Hackathon) | ✅ |
-| (Optional) Integration with Google Cloud or Anthropic for prize tracks | ✅ (Ideas 1–3 provide pathways) |
-| (Optional) Green / sustainable design | ✅ (event‑driven, low compute) |
-
-These three concepts balance **creativity** (AI‑driven code review, auto‑remediation, AI‑generated compliance docs), **simplicity** (single‑event triggers, modest external services), and **validity** against every mandatory rule and the judging focus areas. Good luck hacking!
+These concepts keep the implementation lightweight (single‑event trigger → API call → actionable output) while still hitting the high‑value judging categories (technical depth, impact, platform integration, sustainability). Choose the one that best matches your team’s skill‑set and the prize you’re targeting!
+            

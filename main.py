@@ -1,3 +1,8 @@
+import sys
+import io
+if sys.stdout.encoding != 'utf-8':
+    sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
+
 import os
 from typing import TypedDict, List
 from langgraph.graph import StateGraph, START, END
@@ -8,9 +13,11 @@ import pathlib
 import re
 from pathvalidate import sanitize_filename
 
+
 # --- 1. THE SHARED MEMORY (The 'State') ---
 # This is where the agent stores and carries data through the workflow.
 class HackathonState(TypedDict):
+    client: AsyncGradient
     raw_overview: str
     hackathon_name: str           
     requirements: List[str]
@@ -29,11 +36,9 @@ class HackathonState(TypedDict):
 # This function acts as your first workstation: The Analyst.
 async def analyst_node(state: HackathonState):
     print("--- NODE 1: Analyzing Hackathon Overview ---")
-    
-    # Initialize the Gradient client using your secure access key
-    inference_client = AsyncGradient(
-        model_access_key=os.environ.get("GRADIENT_MODEL_ACCESS_KEY")
-    )
+
+    # Access the client from the state
+    client = state["client"] 
 
     # The System Prompt: Defines the "Expert Analyst" persona and specific rules
     system_instructions = (
@@ -47,7 +52,8 @@ async def analyst_node(state: HackathonState):
     )
 
     # Call the model (we use the 'openai-gpt-oss-120b' model provided by Gradient)
-    response = await inference_client.chat.completions.create(
+    # Use the local 'client' variable
+    response = await client.chat.completions.create(
         model="openai-gpt-oss-120b",
         messages=[
             {"role": "system", "content": system_instructions},
@@ -67,12 +73,15 @@ async def analyst_node(state: HackathonState):
     return {
         "hackathon_name": raw_title, 
         "requirements": [content],
-        "required_keys": ["GRADIENT_MODEL_ACCESS_KEY"]
+        "required_keys": ["LLM_API_KEY"]
     }
 
 # This function acts as your second workstation: The Scaffolder.
 async def scaffolder_node(state: HackathonState):
     print(f"--- NODE 2: Innovating Infrastructure for {state['hackathon_name'][:30]}... ---")
+
+    # Access the client from the state
+    client = state["client"]
     
     # 1. Standardized Folder Naming
     # Force lowercase, remove special characters, and limit to a concise slug
@@ -81,9 +90,6 @@ async def scaffolder_node(state: HackathonState):
     sandbox_path = pathlib.Path(f"./output/{folder_name}")
     sandbox_path.mkdir(parents=True, exist_ok=True)
 
-    # Initialize the client for dual inference
-    inference_client = AsyncGradient(model_access_key=os.environ.get("GRADIENT_MODEL_ACCESS_KEY"))
-    
     # 2. Dynamic Requirements Inference
     req_prompt = (
         f"Based on these requirements: {state['requirements'][0]}\n"
@@ -101,7 +107,7 @@ async def scaffolder_node(state: HackathonState):
     # Execution & Merging Logic
     async def get_inference(prompt):
         try:
-            resp = await inference_client.chat.completions.create(
+            resp = await client.chat.completions.create(
                 model="openai-gpt-oss-120b",
                 messages=[{"role": "user", "content": prompt}]
             )
@@ -140,14 +146,13 @@ async def scaffolder_node(state: HackathonState):
 # This function acts as your third workstation: The Creative.
 async def creative_node(state: HackathonState):
     print("--- NODE 3: Brainstorming Project Concepts ---")
+
+    # Access the client from the state
+    client = state["client"]
     
     # TRANSPARENCY: Verify we still have the data from Node 2
     has_gitignore = "YES" if "gitignore_content" in state else "NO"
     print(f"DEBUG: Creative Node received gitignore_content? {has_gitignore}")
-
-    inference_client = AsyncGradient(
-        model_access_key=os.environ.get("GRADIENT_MODEL_ACCESS_KEY")
-    )
 
     # The Persona: Focused on your "Singles and Doubles" philosophy [cite: 11]
     system_instructions = (
@@ -159,7 +164,7 @@ async def creative_node(state: HackathonState):
         "FORMAT: Return ideas with a Title, Description, and 'Why it fits' section."
     )
 
-    response = await inference_client.chat.completions.create(
+    response = await client.chat.completions.create(
         model="openai-gpt-oss-120b",
         messages=[
             {"role": "system", "content": system_instructions},
@@ -177,6 +182,12 @@ async def creative_node(state: HackathonState):
 # This is the 'Front Door' the platform uses to run your agent.
 @entrypoint
 async def main(input: dict, context: RequestContext):
+
+    # In the cloud, DigitalOcean injects this.
+    inference_client = AsyncGradient(
+        model_access_key=os.environ.get("GRADIENT_MODEL_ACCESS_KEY")
+    )
+
     builder = StateGraph(HackathonState)
     builder.add_node("analyst", analyst_node)
     builder.add_node("scaffolder", scaffolder_node)
@@ -189,7 +200,11 @@ async def main(input: dict, context: RequestContext):
     
     graph = builder.compile()
     
-    initial_input = {"raw_overview": input.get("text", "No overview provided.")}
+    initial_input = {
+        "raw_overview": input.get("text", "No overview provided."),
+        "client": inference_client
+    }
+
     result = await graph.ainvoke(initial_input)
 
     # --- NEW: WRITE READABLE MARKDOWN REPORT ---
@@ -209,5 +224,10 @@ async def main(input: dict, context: RequestContext):
         f.write("## 🚀 3. Proposed Concepts (Singles & Doubles)\n")
         for concept in result['project_concepts']:
             f.write(f"{concept}\n")
+
+    
+    # DELETE the client from the result so it doesn't try to turn into JSON
+    if "client" in result:
+        del result["client"]
 
     return result

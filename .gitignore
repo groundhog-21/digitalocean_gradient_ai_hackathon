@@ -1,18 +1,27 @@
 # Secrets and Config
 .env
 .gradient/
+# Added: Ignore the agent.yml if it contains local-only testing paths
+agent.yml
 
 # Python Environment
 .venv/
+venv/
+env/
 __pycache__/
 *.pyc
 
-# Concept Files
+# Project Overview Files
 docs/
 
 # Local Sandbox Outputs
 output/
 
+# Ignore the reports generated during local testing
+hackathon_report.md
+hackathon_report.json
+
 # OS/IDE debris
 .DS_Store
 .vscode/
+.idea/
