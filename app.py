@@ -106,26 +106,63 @@ async def run_agent_and_display():
 ## 🚀 3. Proposed Concepts
 {result['project_concepts'][0]}
             """
-        
-        # 4. Render directly to a professional Bootstrap webpage
+        # 4. Render directly with sophisticated custom CSS
         report_html = markdown2.markdown(report_md, extras=["fenced-code-blocks", "tables"])
         
         return render_template_string("""
             <!DOCTYPE html>
             <html>
                 <head>
+                    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-                    <title>Live Agent Analysis</title>
-                    <style>body { background:#f4f7f6; } .container { max-width: 900px; }</style>
+                    <title>Hackathon Intelligence Report</title>
+                    <style>
+                        body { 
+                            background: #fdfdfd; 
+                            font-family: 'Inter', -apple-system, sans-serif; 
+                            color: #2d3436; 
+                            line-height: 1.5;
+                        }
+                        .container { 
+                            max-width: 820px; 
+                            margin-top: 4rem; 
+                            margin-bottom: 4rem;
+                            border: 1px solid #eaeaea;
+                        }
+                        
+                        /* Header Scaling - Clean & Compact */
+                        h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1.5rem; color: #111; }
+                        h2 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; color: #444; border-bottom: 1px solid #f0f0f0; padding-bottom: 8px; }
+                        h3 { font-size: 1.05rem; font-weight: 600; color: #555; }
+                        
+                        /* Body Text Refinement */
+                        p, li, td { font-size: 0.92rem; color: #444; }
+                        
+                        /* Fix for Numbering Scale */
+                        ol { padding-left: 1.2rem; }
+                        ol li::marker { 
+                            font-weight: 600; 
+                            font-size: 0.95rem; 
+                            color: #000;
+                        }
+                        
+                        /* Table Polish */
+                        table { margin: 1.5rem 0; width: 100%; }
+                        th { background: #f8f9fa; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+                        td { vertical-align: top; border-bottom: 1px solid #f1f1f1; }
+
+                        /* Code blocks for Blueprint section */
+                        pre { background: #f4f4f4; border-radius: 6px; padding: 1rem; font-size: 0.85rem; border: 1px solid #eee; }
+                    </style>
                 </head>
-                <body class="py-5">
-                    <div class="container bg-white shadow-lg p-5 rounded">
+                <body class="py-2">
+                    <div class="container bg-white shadow-sm p-5 rounded-3">
                         {{ content|safe }}
                     </div>
                 </body>
             </html>
         """, content=report_html)
-        
+ 
     except Exception as e:
         return f"<h1>Execution Error</h1><p>{str(e)}</p>", 200
 
