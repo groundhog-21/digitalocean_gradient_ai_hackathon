@@ -19,7 +19,8 @@ from pathvalidate import sanitize_filename
 class HackathonState(TypedDict):
     client: AsyncGradient
     raw_overview: str
-    hackathon_name: str           
+    hackathon_name: str    
+    folder_name: str       
     requirements: List[str]
     judging_criteria: List[str]
     platform_accounts: List[dict]
@@ -136,6 +137,7 @@ async def scaffolder_node(state: HackathonState):
     return {
         "gitignore_content": gitignore_content,
         "requirements_content": reqs_content,
+        "folder_name": folder_name,
         "setup_commands": [
             f"cd ./output/{folder_name}",
             "python -m venv .venv",
@@ -207,9 +209,13 @@ async def main(input: dict, context: RequestContext):
 
     result = await graph.ainvoke(initial_input)
 
+    # Fetch the dynamic name, fallback to 'hackathon' just in case
+    dynamic_prefix = result.get('folder_name', 'hackathon')
+    md_filename = f"{dynamic_prefix}_report.md"
+
     # --- NEW: WRITE READABLE MARKDOWN REPORT ---
-    with open("hackathon_report.md", "w", encoding="utf-8") as f:
-        f.write("# 🏆 Hackathon Cold-Start Report\n\n")
+    with open(md_filename, "w", encoding="utf-8") as f:
+        f.write("# 🏆 Hackathon Helper Report\n\n")
         f.write("## 📋 1. Analysis & Requirements\n")
         f.write(f"{result['requirements'][0]}\n\n")
         
@@ -221,10 +227,9 @@ async def main(input: dict, context: RequestContext):
         f.write("### requirements.txt Content:\n```text\n")
         f.write(f"{result.get('requirements_content', 'Check Node 2 logs for content.')}\n```\n")
         
-        f.write("## 🚀 3. Proposed Concepts (Singles & Doubles)\n")
-        for concept in result['project_concepts']:
+        f.write("## 🚀 3. Proposed Concepts\n")
+        for concept in result.get('project_concepts', []):
             f.write(f"{concept}\n")
-
     
     # DELETE the client from the result so it doesn't try to turn into JSON
     if "client" in result:

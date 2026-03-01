@@ -1,4 +1,5 @@
 import os
+import json
 import asyncio
 import markdown2
 from flask import Flask, render_template_string
@@ -51,19 +52,21 @@ async def run_agent_and_display():
         result = await graph.ainvoke(initial_input)
 
         # --- Build the local reports ---
-        import json
-        
         # UPDATED: Save the JSON Report (Clean the client first)
         report_data = result.copy()
         if "client" in report_data:
             del report_data["client"]
-            
-        with open("hackathon_report.json", "w", encoding="utf-8") as f:
+        
+        # Fetch the dynamic name, fallback to 'hackathon' just in case
+        dynamic_prefix = result.get('folder_name', 'hackathon')
+        json_filename = f"{dynamic_prefix}_report.json"
+
+        with open(json_filename, "w", encoding="utf-8") as f:
             json.dump(report_data, f, indent=2)
             
         # Save the Markdown Report
         local_md_content = f"""
-# 🏆 Hackathon Cold-Start Report
+# 🏆 Hackathon Helper Report
 
 ## 📋 1. Analysis & Requirements
 {result['requirements'][0]}
@@ -82,12 +85,16 @@ async def run_agent_and_display():
 ## 🚀 3. Proposed Concepts
 {result['project_concepts'][0]}
             """
-        with open("hackathon_report.md", "w", encoding="utf-8") as f:
+        # Fetch the dynamic name, fallback to 'hackathon' just in case
+        dynamic_prefix = result.get('folder_name', 'hackathon')
+        md_filename = f"{dynamic_prefix}_report.md"
+
+        with open(md_filename, "w", encoding="utf-8") as f:
             f.write(local_md_content)
 
         # --- Build the web report ---
         report_md = f"""
-# 🏆 Hackathon Cold-Start Report
+# 🏆 Hackathon Helper Report
 
 ## 📋 1. Analysis & Requirements
 {result['requirements'][0]}
